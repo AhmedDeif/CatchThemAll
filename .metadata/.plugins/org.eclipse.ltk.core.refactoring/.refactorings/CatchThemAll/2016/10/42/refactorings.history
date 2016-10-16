@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Abstractions.QuingFunction&apos; to &apos;QingFunction&apos;&#x0A;- Original project: &apos;CatchThemAll&apos;&#x0A;- Original element: &apos;Abstractions.QuingFunction&apos;&#x0A;- Renamed element: &apos;Abstractions.QingFunction&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;QuingFunction&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/&lt;Abstractions{QuingFunction.java[QuingFunction" matchStrategy="1" name="QingFunction" qualified="false" references="true" similarDeclarations="false" stamp="1476548053888" textual="false" version="1.0"/>
+</session>

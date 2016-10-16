@@ -1,0 +1,12 @@
+package src;
+
+public class Maze {
+
+	public Maze(int x, int y) {
+		
+	}
+	
+	public void MazeGen() {
+		
+	}
+}

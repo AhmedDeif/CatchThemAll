@@ -1,0 +1,6 @@
+package Abstractions;
+
+public abstract class QingFunction {
+
+
+}

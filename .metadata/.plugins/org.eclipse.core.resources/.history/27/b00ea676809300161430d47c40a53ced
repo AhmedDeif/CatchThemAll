@@ -1,0 +1,37 @@
+package src;
+
+public class Cell {
+	
+	int wall;
+	boolean pokemonHiding;
+	boolean startCell;
+	boolean endCell;
+	
+	public Cell() {
+		this.wall = 0;
+		this.pokemonHiding = false;
+	}
+	
+	public Cell(boolean startCell) {
+		this.wall = 0;
+		this.pokemonHiding = false;
+		this.startCell = true;
+	}
+
+	public int getWall() {
+		return wall;
+	}
+
+	public void setWall(int wall) {
+		this.wall = wall;
+	}
+
+	public boolean isPokemonHiding() {
+		return pokemonHiding;
+	}
+
+	public void setPokemonHiding(boolean pokemonHiding) {
+		this.pokemonHiding = pokemonHiding;
+	}
+	
+}

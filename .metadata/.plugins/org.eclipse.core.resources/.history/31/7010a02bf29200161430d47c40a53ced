@@ -1,0 +1,10 @@
+package Abstractions;
+
+public abstract class Problem {
+
+	String Operators;
+	String initState;
+	
+	abstract boolean GoalTest();
+	abstract int PathCost();
+}

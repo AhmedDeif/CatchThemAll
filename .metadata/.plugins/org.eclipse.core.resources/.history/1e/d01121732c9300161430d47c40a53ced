@@ -1,0 +1,28 @@
+package Abstractions;
+
+import java.util.Queue;
+
+public abstract class QingFunction {
+
+	// The quing function will place nodes in a regular queue, in the order that they should be extracted in.
+	// for example, if we have a lIFO system. Then the queuing function will arrange the queue so that the 
+	// new node will go to the front of the queue. Therefore dequeue produces a stack.
+	
+	/**
+	 * Returns an Image object that can then be painted on the screen. 
+	 * The url argument must specify an absolute {@link URL}. The name
+	 * argument is a specifier that is relative to the url argument. 
+	 * <p>
+	 * This method always returns immediately, whether or not the 
+	 * image exists. When this applet attempts to draw the image on
+	 * the screen, the data will be loaded. The graphics primitives 
+	 * that draw the image will incrementally paint on the screen. 
+	 *
+	 * @param  nodes  an absolute URL giving the base location of the image
+	 * @param  expandedNodes the location of the image, relative to the url argument
+	 * @return      A queue of nodes ordered according to the quing function
+	 * @see         Node
+	 */
+	public abstract Queue<Node> updateQueue(Queue<Node> nodes, Node[] expandedNodes);
+	
+}

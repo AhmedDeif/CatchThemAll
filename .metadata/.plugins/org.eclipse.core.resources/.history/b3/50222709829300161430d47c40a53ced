@@ -1,0 +1,94 @@
+package src;
+
+import java.util.Collections;
+import java.util.Arrays;
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Maze {
+
+	/*
+	 * The end point will always be set to be the bottom right corner of the maze.
+	 * The coordinates of this point will always be maze[n-1][m-1] where n and m
+	 * define the size of the maze in the x and y directions respectively.
+	 */
+	
+	private int x;
+	private int y;
+	private Cell[][] maze;
+	private static int sizeLimit = 5;
+	private int startPointX;
+	private int startPointY;
+	private int numPokemons;
+	private int numCells;
+	private int endPointX;
+	private int endPointY;
+	
+	public Maze() {
+		int x = ThreadLocalRandom.current().nextInt(0, this.sizeLimit + 1);
+		int y = ThreadLocalRandom.current().nextInt(0, this.sizeLimit + 1);
+		this.x = x;
+		this.y = y;
+		this.startPointX = ThreadLocalRandom.current().nextInt(0, this.x + 1);
+		this.startPointY = ThreadLocalRandom.current().nextInt(0, this.y + 1);
+		this.endPointX = this.x - 1;
+		this.endPointY = this.y - 1;
+		this.numCells = this.x * this.y;
+		/*
+		 * A pokemon can be present in any cell except the start and end cells.
+		 * This is an assumption made by us.
+		 */
+		this.numPokemons = ThreadLocalRandom.current().nextInt(0, (numCells - 2) + 1);
+		
+		// Generate random pokemon locations
+		for(int i=0; i<numPokemons; i++) {
+			int x = ThreadLocalRandom.current().nextInt(0, this.x + 1);
+			int z = 
+		}
+		
+		for(int i=0; i<x; i++) {
+			
+			for(int j=0; j<y; j++) {
+				
+				if(i==startPointX && j==startPointY) {
+					maze[i][j] = new Cell(true, false);
+				} 
+				
+				else {
+					if(i==endPointX && j==endPointY) {
+						maze[i][j] = new Cell(false, true);
+					}
+					
+					else {
+						maze[i][j] = new Cell();
+						
+					}
+				}
+			}
+		}
+	}
+	
+	public void putPokemons() {
+		//	Create a random number of pokemons and put in maze cells.
+		
+		/*
+		 * random coordiate generation loop
+		 */
+		
+		
+		for(int i=0; i< x; i++) {
+			
+			for(int j=0; j<y; j++) {
+				
+				
+			}
+		}
+		
+	}
+	
+	public void GenerateStartPoint() {
+		
+	}
+	
+	
+	
+}

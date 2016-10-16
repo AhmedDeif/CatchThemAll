@@ -1,0 +1,9 @@
+package Abstractions;
+
+public abstract class Operation {
+	String name;
+	
+	public Operation(String name) {
+		this.name = name;
+	}
+}

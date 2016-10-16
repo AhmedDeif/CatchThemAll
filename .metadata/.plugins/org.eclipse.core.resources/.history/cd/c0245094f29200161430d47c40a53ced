@@ -1,0 +1,8 @@
+package Abstractions;
+
+abstract class Search {
+
+	public void GeneralSearch(Problem problem, QingFunction QingFunc) {
+		
+	}
+}

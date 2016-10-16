@@ -1,0 +1,10 @@
+package Abstractions;
+
+public abstract class Node {
+	
+	String state;
+	Node parent;
+	int depth;
+	int pathCost;
+
+}

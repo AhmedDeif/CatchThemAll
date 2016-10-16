@@ -1,0 +1,10 @@
+package Abstractions;
+
+abstract class Search {
+
+	public boolean GeneralSearch(Problem problem, QingFunction QingFunc) {
+		//problem.GetInitState();
+		return false;
+		
+	}
+}

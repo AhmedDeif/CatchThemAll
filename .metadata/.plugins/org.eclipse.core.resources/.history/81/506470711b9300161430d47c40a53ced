@@ -1,0 +1,34 @@
+package Abstractions;
+
+public abstract class Problem {
+
+	/*
+	 * The Problem class is a five tuple. A specific problem extends the problem class
+	 * adjusting the state space with the initial state.
+	 */
+	
+	Operation[] operations;
+	State[] stateSpace;
+	State initState;
+	
+	abstract boolean GoalTest();
+	abstract int PathCost();
+	abstract State TransitionModel(State state, Operation operation);
+	abstract Node ChildNode(Node parent, Operation action);
+	
+	
+	/*
+	 * function CHILD-NODE(problem,parent,action) returns a node return a node with
+			STATE = problem.RESULT(parent.STATE,action),
+			PARENT = parent, ACTION = action,
+			PATH-COST = parent.PATH-COST + problem.STEP-COST(parent.STATE,action)
+	 */
+	
+	
+	public Problem() {
+		
+	}
+	
+	
+	
+}

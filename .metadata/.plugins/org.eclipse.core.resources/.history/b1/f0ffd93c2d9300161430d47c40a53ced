@@ -1,0 +1,13 @@
+package Abstractions;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+abstract class Search {
+
+	public static boolean GeneralSearch(Problem problem, QingFunction QingFunc) {
+		Queue<Node> Nodes = new LinkedList<Node>();
+		
+		return false;
+	}
+}

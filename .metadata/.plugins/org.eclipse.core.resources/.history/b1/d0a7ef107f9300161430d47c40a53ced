@@ -1,0 +1,15 @@
+package src;
+
+public class Cell {
+	
+	int wall;
+	boolean pokemonHiding;
+	
+	public Cell() {
+		this.wall = 0;
+		this.pokemonHiding = false;
+	}
+	
+	
+
+}

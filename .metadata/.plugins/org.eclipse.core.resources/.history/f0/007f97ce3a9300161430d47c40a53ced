@@ -1,0 +1,16 @@
+package src;
+
+public class Maze {
+
+	Cell[][] maze;
+	int x;
+	int y;
+	
+	public Maze(int x, int y) {
+		maze = new Cell[x][y];
+	}
+	
+	public void MazeGen() {
+		
+	}
+}

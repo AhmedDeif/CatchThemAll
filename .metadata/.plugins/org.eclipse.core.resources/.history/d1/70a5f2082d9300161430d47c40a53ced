@@ -1,0 +1,11 @@
+package Abstractions;
+
+import java.util.Queue;
+abstract class Search {
+
+	public static boolean GeneralSearch(Problem problem, QingFunction QingFunc) {
+		Queue<Node> Nodes = new  Queue<Node>();
+		
+		return false;
+	}
+}

@@ -1,0 +1,25 @@
+package Abstractions;
+
+public abstract class Problem {
+
+	/*
+	 * The Problem class is a five tuple. A specific problem extends the problem class
+	 * adjusting the state space with the initial state.
+	 */
+	
+	Operation[] operations;
+	State[] stateSpace;
+	State initState;
+
+	
+	abstract boolean GoalTest();
+	abstract int PathCost();
+	
+	public Problem() {
+		
+	}
+	
+	public String GetInitState() {
+		return initState;
+	}
+}

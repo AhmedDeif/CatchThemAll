@@ -1,0 +1,17 @@
+package Abstractions;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+abstract class Search {
+
+	public static boolean GeneralSearch(Problem problem, QingFunction QingFunc) {
+		Queue<Node> Nodes = new LinkedList<Node>();
+		
+		// The root node has not parent and is at depth 0.
+		Node root = new Node(problem.getInitState(), null, 0, 0, true);
+		Nodes.add(root);
+		
+		return false;
+	}
+}

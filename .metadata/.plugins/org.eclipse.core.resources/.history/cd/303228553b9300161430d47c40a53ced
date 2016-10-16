@@ -1,0 +1,26 @@
+package src;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Maze {
+
+	Cell[][] maze;
+	int x;
+	int y;
+	
+	public Maze(int x, int y) {
+		maze = new Cell[x][y];
+		this.x = x;
+		this.y = y;
+	}
+	
+	public void MazeGen() {
+		int startX = ThreadLocalRandom.current().nextInt(0, x + 1);
+		int startY = ThreadLocalRandom.current().nextInt(0, y + 1);
+	}
+	
+	public boolean CanVisit(Cell a, Cell b) {
+		
+		return false;
+	}
+}

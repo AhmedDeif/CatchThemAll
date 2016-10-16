@@ -1,0 +1,13 @@
+package Abstractions;
+
+import java.util.Queue;
+
+public abstract class QingFunction {
+
+	// The quing function will place nodes in a regular queue, in the order that they should be extracted in.
+	// for example, if we have a lifo system. Then the queuing function will arrange the queue so that the 
+	// new node will go to the front of the queue. Therefore dequeue produces a stack.
+	
+	public abstract Queue<Node> updateQueue(Queue<Node> nodes, Node[] expandedNodes);
+	
+}

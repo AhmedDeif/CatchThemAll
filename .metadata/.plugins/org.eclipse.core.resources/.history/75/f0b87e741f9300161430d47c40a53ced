@@ -1,0 +1,11 @@
+package Abstractions;
+
+public abstract class State {
+	
+	String name;
+	
+	public State(String name) {
+		this.name = name;
+	}
+
+}

@@ -1,0 +1,18 @@
+package Abstractions;
+
+public abstract class Problem {
+
+	String Operators;
+	Node initState;
+	
+	abstract boolean GoalTest();
+	abstract int PathCost();
+	
+	public Problem(String[] operators, Node initState) {
+		
+	}
+	
+	public String GetInitState() {
+		return initState;
+	}
+}

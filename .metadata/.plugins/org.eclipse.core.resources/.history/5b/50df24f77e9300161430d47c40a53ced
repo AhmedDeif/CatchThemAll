@@ -1,0 +1,14 @@
+package src;
+
+public class Cell {
+	
+	int wall;
+	boolean pokemonHiding;
+	
+	public Cell() {
+
+	}
+	
+	
+
+}

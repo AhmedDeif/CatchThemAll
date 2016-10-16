@@ -1,0 +1,13 @@
+package src;
+
+public class Cell {
+	boolean northWall, southWall, eastWall, westWall;
+	boolean visited = false;
+	public Cell() {
+		this.northWall = true;
+		this.southWall = true;
+		this.eastWall = true;
+		this.westWall = true;
+	}
+
+}
